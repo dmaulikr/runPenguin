@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BE0C7371D19DD6400D8E1BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0C7361D19DD6400D8E1BB /* AppDelegate.swift */; };
+		6BE0C7391D19DD6400D8E1BB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6BE0C7381D19DD6400D8E1BB /* GameScene.sks */; };
+		6BE0C73B1D19DD6400D8E1BB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0C73A1D19DD6400D8E1BB /* GameScene.swift */; };
+		6BE0C73D1D19DD6400D8E1BB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0C73C1D19DD6400D8E1BB /* GameViewController.swift */; };
+		6BE0C7401D19DD6400D8E1BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE0C73E1D19DD6400D8E1BB /* Main.storyboard */; };
+		6BE0C7421D19DD6400D8E1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE0C7411D19DD6400D8E1BB /* Assets.xcassets */; };
+		6BE0C7451D19DD6400D8E1BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE0C7431D19DD6400D8E1BB /* LaunchScreen.storyboard */; };
+		6BE0C7501D19DD6400D8E1BB /* runPenguinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0C74F1D19DD6400D8E1BB /* runPenguinTests.swift */; };
+		6BE0C75B1D19DD6400D8E1BB /* runPenguinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0C75A1D19DD6400D8E1BB /* runPenguinUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BE0C74C1D19DD6400D8E1BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BE0C72B1D19DD6400D8E1BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BE0C7321D19DD6400D8E1BB;
+			remoteInfo = runPenguin;
+		};
+		6BE0C7571D19DD6400D8E1BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BE0C72B1D19DD6400D8E1BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BE0C7321D19DD6400D8E1BB;
+			remoteInfo = runPenguin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6BE0C7331D19DD6400D8E1BB /* runPenguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runPenguin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE0C7361D19DD6400D8E1BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BE0C7381D19DD6400D8E1BB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		6BE0C73A1D19DD6400D8E1BB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		6BE0C73C1D19DD6400D8E1BB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6BE0C73F1D19DD6400D8E1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BE0C7411D19DD6400D8E1BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BE0C7441D19DD6400D8E1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BE0C7461D19DD6400D8E1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE0C74B1D19DD6400D8E1BB /* runPenguinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = runPenguinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE0C74F1D19DD6400D8E1BB /* runPenguinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runPenguinTests.swift; sourceTree = "<group>"; };
+		6BE0C7511D19DD6400D8E1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE0C7561D19DD6400D8E1BB /* runPenguinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = runPenguinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE0C75A1D19DD6400D8E1BB /* runPenguinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runPenguinUITests.swift; sourceTree = "<group>"; };
+		6BE0C75C1D19DD6400D8E1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BE0C7301D19DD6400D8E1BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE0C7481D19DD6400D8E1BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE0C7531D19DD6400D8E1BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BE0C72A1D19DD6400D8E1BB = {
+			isa = PBXGroup;
+			children = (
+				6BE0C7351D19DD6400D8E1BB /* runPenguin */,
+				6BE0C74E1D19DD6400D8E1BB /* runPenguinTests */,
+				6BE0C7591D19DD6400D8E1BB /* runPenguinUITests */,
+				6BE0C7341D19DD6400D8E1BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BE0C7341D19DD6400D8E1BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BE0C7331D19DD6400D8E1BB /* runPenguin.app */,
+				6BE0C74B1D19DD6400D8E1BB /* runPenguinTests.xctest */,
+				6BE0C7561D19DD6400D8E1BB /* runPenguinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BE0C7351D19DD6400D8E1BB /* runPenguin */ = {
+			isa = PBXGroup;
+			children = (
+				6BE0C7361D19DD6400D8E1BB /* AppDelegate.swift */,
+				6BE0C7381D19DD6400D8E1BB /* GameScene.sks */,
+				6BE0C73A1D19DD6400D8E1BB /* GameScene.swift */,
+				6BE0C73C1D19DD6400D8E1BB /* GameViewController.swift */,
+				6BE0C73E1D19DD6400D8E1BB /* Main.storyboard */,
+				6BE0C7411D19DD6400D8E1BB /* Assets.xcassets */,
+				6BE0C7431D19DD6400D8E1BB /* LaunchScreen.storyboard */,
+				6BE0C7461D19DD6400D8E1BB /* Info.plist */,
+			);
+			path = runPenguin;
+			sourceTree = "<group>";
+		};
+		6BE0C74E1D19DD6400D8E1BB /* runPenguinTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BE0C74F1D19DD6400D8E1BB /* runPenguinTests.swift */,
+				6BE0C7511D19DD6400D8E1BB /* Info.plist */,
+			);
+			path = runPenguinTests;
+			sourceTree = "<group>";
+		};
+		6BE0C7591D19DD6400D8E1BB /* runPenguinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BE0C75A1D19DD6400D8E1BB /* runPenguinUITests.swift */,
+				6BE0C75C1D19DD6400D8E1BB /* Info.plist */,
+			);
+			path = runPenguinUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BE0C7321D19DD6400D8E1BB /* runPenguin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE0C75F1D19DD6400D8E1BB /* Build configuration list for PBXNativeTarget "runPenguin" */;
+			buildPhases = (
+				6BE0C72F1D19DD6400D8E1BB /* Sources */,
+				6BE0C7301D19DD6400D8E1BB /* Frameworks */,
+				6BE0C7311D19DD6400D8E1BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = runPenguin;
+			productName = runPenguin;
+			productReference = 6BE0C7331D19DD6400D8E1BB /* runPenguin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BE0C74A1D19DD6400D8E1BB /* runPenguinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE0C7621D19DD6400D8E1BB /* Build configuration list for PBXNativeTarget "runPenguinTests" */;
+			buildPhases = (
+				6BE0C7471D19DD6400D8E1BB /* Sources */,
+				6BE0C7481D19DD6400D8E1BB /* Frameworks */,
+				6BE0C7491D19DD6400D8E1BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BE0C74D1D19DD6400D8E1BB /* PBXTargetDependency */,
+			);
+			name = runPenguinTests;
+			productName = runPenguinTests;
+			productReference = 6BE0C74B1D19DD6400D8E1BB /* runPenguinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6BE0C7551D19DD6400D8E1BB /* runPenguinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE0C7651D19DD6400D8E1BB /* Build configuration list for PBXNativeTarget "runPenguinUITests" */;
+			buildPhases = (
+				6BE0C7521D19DD6400D8E1BB /* Sources */,
+				6BE0C7531D19DD6400D8E1BB /* Frameworks */,
+				6BE0C7541D19DD6400D8E1BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BE0C7581D19DD6400D8E1BB /* PBXTargetDependency */,
+			);
+			name = runPenguinUITests;
+			productName = runPenguinUITests;
+			productReference = 6BE0C7561D19DD6400D8E1BB /* runPenguinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BE0C72B1D19DD6400D8E1BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Jordan;
+				TargetAttributes = {
+					6BE0C7321D19DD6400D8E1BB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					6BE0C74A1D19DD6400D8E1BB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 6BE0C7321D19DD6400D8E1BB;
+					};
+					6BE0C7551D19DD6400D8E1BB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 6BE0C7321D19DD6400D8E1BB;
+					};
+				};
+			};
+			buildConfigurationList = 6BE0C72E1D19DD6400D8E1BB /* Build configuration list for PBXProject "runPenguin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BE0C72A1D19DD6400D8E1BB;
+			productRefGroup = 6BE0C7341D19DD6400D8E1BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BE0C7321D19DD6400D8E1BB /* runPenguin */,
+				6BE0C74A1D19DD6400D8E1BB /* runPenguinTests */,
+				6BE0C7551D19DD6400D8E1BB /* runPenguinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BE0C7311D19DD6400D8E1BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE0C7391D19DD6400D8E1BB /* GameScene.sks in Resources */,
+				6BE0C7451D19DD6400D8E1BB /* LaunchScreen.storyboard in Resources */,
+				6BE0C7421D19DD6400D8E1BB /* Assets.xcassets in Resources */,
+				6BE0C7401D19DD6400D8E1BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE0C7491D19DD6400D8E1BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE0C7541D19DD6400D8E1BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BE0C72F1D19DD6400D8E1BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE0C73B1D19DD6400D8E1BB /* GameScene.swift in Sources */,
+				6BE0C73D1D19DD6400D8E1BB /* GameViewController.swift in Sources */,
+				6BE0C7371D19DD6400D8E1BB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE0C7471D19DD6400D8E1BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE0C7501D19DD6400D8E1BB /* runPenguinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE0C7521D19DD6400D8E1BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE0C75B1D19DD6400D8E1BB /* runPenguinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BE0C74D1D19DD6400D8E1BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BE0C7321D19DD6400D8E1BB /* runPenguin */;
+			targetProxy = 6BE0C74C1D19DD6400D8E1BB /* PBXContainerItemProxy */;
+		};
+		6BE0C7581D19DD6400D8E1BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BE0C7321D19DD6400D8E1BB /* runPenguin */;
+			targetProxy = 6BE0C7571D19DD6400D8E1BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BE0C73E1D19DD6400D8E1BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BE0C73F1D19DD6400D8E1BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BE0C7431D19DD6400D8E1BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BE0C7441D19DD6400D8E1BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BE0C75D1D19DD6400D8E1BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BE0C75E1D19DD6400D8E1BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BE0C7601D19DD6400D8E1BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = runPenguin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordanInc.runPenguin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6BE0C7611D19DD6400D8E1BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = runPenguin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordanInc.runPenguin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6BE0C7631D19DD6400D8E1BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = runPenguinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordanInc.runPenguinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/runPenguin.app/runPenguin";
+			};
+			name = Debug;
+		};
+		6BE0C7641D19DD6400D8E1BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = runPenguinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordanInc.runPenguinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/runPenguin.app/runPenguin";
+			};
+			name = Release;
+		};
+		6BE0C7661D19DD6400D8E1BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = runPenguinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordanInc.runPenguinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = runPenguin;
+			};
+			name = Debug;
+		};
+		6BE0C7671D19DD6400D8E1BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = runPenguinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordanInc.runPenguinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = runPenguin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BE0C72E1D19DD6400D8E1BB /* Build configuration list for PBXProject "runPenguin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE0C75D1D19DD6400D8E1BB /* Debug */,
+				6BE0C75E1D19DD6400D8E1BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BE0C75F1D19DD6400D8E1BB /* Build configuration list for PBXNativeTarget "runPenguin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE0C7601D19DD6400D8E1BB /* Debug */,
+				6BE0C7611D19DD6400D8E1BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6BE0C7621D19DD6400D8E1BB /* Build configuration list for PBXNativeTarget "runPenguinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE0C7631D19DD6400D8E1BB /* Debug */,
+				6BE0C7641D19DD6400D8E1BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6BE0C7651D19DD6400D8E1BB /* Build configuration list for PBXNativeTarget "runPenguinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE0C7661D19DD6400D8E1BB /* Debug */,
+				6BE0C7671D19DD6400D8E1BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BE0C72B1D19DD6400D8E1BB /* Project object */;
+}
