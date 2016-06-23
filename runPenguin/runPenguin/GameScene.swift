@@ -23,6 +23,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let obstacleVelocity: CGFloat = 1.0
     var lastObstacleAdded : NSTimeInterval = 0.0
     
+    let obstacleTexture = SKTexture(imageNamed: "obstacle")
+    let penguinTexture = SKTexture(imageNamed: "penguin")
+    
     override func didMoveToView(view: SKView) {
        
         // Making self delegate of physics world
@@ -97,8 +100,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         obstacle.setScale(1.5)
         
         // Adding SpriteKit physics body for collision detection
-        obstacle.physicsBody = SKPhysicsBody(rectangleOfSize: obstacle.size)
-        obstacle.physicsBody?.categoryBitMask = 10 //UInt32(obstacleCategory)
+        obstacle.physicsBody = SKPhysicsBody(texture: obstacleTexture, size: obstacle.size)
+        obstacle.physicsBody?.categoryBitMask = UInt32(obstacleCategory)
         obstacle.physicsBody?.dynamic = true
         //obstacle.physicsBody?.//
         obstacle.physicsBody?.contactTestBitMask = UInt32(penguinCategory)
@@ -120,7 +123,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         //penguin.zRotation = CGFloat(-M_PI/2)
         
         // Adding SpriteKit physics body for collision detection
-        penguin.physicsBody = SKPhysicsBody(rectangleOfSize: penguin.size)
+        penguin.physicsBody = SKPhysicsBody(texture: penguinTexture,size: penguin.size)
         penguin.physicsBody?.categoryBitMask = UInt32(penguinCategory)
         penguin.physicsBody?.dynamic = true
         penguin.physicsBody?.contactTestBitMask = UInt32(obstacleCategory)
