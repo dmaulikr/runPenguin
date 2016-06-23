@@ -6,6 +6,7 @@
 //  Copyright (c) 2016 Jordan. All rights reserved.
 //
 
+import UIKit
 import SpriteKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
@@ -16,11 +17,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var actionMoveUp = SKAction()
     var actionMoveDown = SKAction()
     
+    var score:Int = 0
+    
     let penguinCategory = 0x1 << 1
     let obstacleCategory = 0x1 << 2
     
-    let backgroundVelocity: CGFloat = 3.0
-    let obstacleVelocity: CGFloat = 1.0
+    let backgroundVelocity: CGFloat = 2.0
+    let foregroundVelocity: CGFloat = 13.0
+
+    let obstacleVelocity: CGFloat = 13.0
     var lastObstacleAdded : NSTimeInterval = 0.0
     
     let obstacleTexture = SKTexture(imageNamed: "obstacle")
@@ -46,6 +51,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         self.backgroundColor = SKColor.whiteColor()
         initializingScrollingBackground()
+        initlizeScrollingForeground()
+        addScore()
         self.addPenguin()
         self.addObstacle()
 
@@ -54,19 +61,53 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
        /* Called when a touch begins */
-        penguin.runAction(actionMoveUp)
+        let jumpSequence = SKAction.sequence([actionMoveUp, actionMoveDown])
+            
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.0, initialSpringVelocity: 1.5, options: [], animations: {
+            self.penguin.runAction(jumpSequence)
+            }, completion: nil)
+        
         
     }
    
+    func initlizeScrollingForeground() {
+        for index in 0 ... 2 {
+            let fg = SKSpriteNode(imageNamed: "foreground")
+            fg.position = CGPoint(x: index * Int(fg.size.width), y: 96)
+            fg.zPosition = -20
+            fg.size.height = 575
+            fg.anchorPoint = CGPointZero
+            fg.name = "foreground"
+            self.addChild(fg)
+        }
+
+    }
+    
     func initializingScrollingBackground() {
         for index in 0 ... 2 {
             let bg = SKSpriteNode(imageNamed: "background")
             bg.position = CGPoint(x: index * Int(bg.size.width), y: 96)
+            bg.zPosition = -30
             bg.size.height = 575
             bg.anchorPoint = CGPointZero
             bg.name = "background"
             self.addChild(bg)
         }
+    }
+    
+    func moveForeground() {
+        self.enumerateChildNodesWithName("foreground", usingBlock: { (node, stop) -> Void in
+            
+            if let fg = node as? SKSpriteNode {
+                fg.position = CGPoint(x: fg.position.x - self.foregroundVelocity, y: fg.position.y)
+                
+                // Checks if bg node is completely scrolled off the screen, if yes, then puts it at the end of the other node.
+                if fg.position.x <= -fg.size.width {
+                    fg.position = CGPointMake(fg.position.x + fg.size.width * 2, fg.position.y)
+                }
+            }
+        })
+
     }
     
     func moveBackground() {
@@ -83,6 +124,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         })
     }
     
+    
     func moveObstacle() {
         self.enumerateChildNodesWithName("obstacle", usingBlock: { (node, stop) -> Void in
             if let obstacle = node as? SKSpriteNode {
@@ -97,12 +139,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func addObstacle() {
         // Initializing spaceship node
         let obstacle = SKSpriteNode(imageNamed: "obstacle")
-        obstacle.setScale(1.5)
+        obstacle.setScale(2.5)
         
         // Adding SpriteKit physics body for collision detection
         obstacle.physicsBody = SKPhysicsBody(texture: obstacleTexture, size: obstacle.size)
         obstacle.physicsBody?.categoryBitMask = UInt32(obstacleCategory)
         obstacle.physicsBody?.dynamic = true
+        obstacle.zPosition = -20
         //obstacle.physicsBody?.//
         obstacle.physicsBody?.contactTestBitMask = UInt32(penguinCategory)
         obstacle.physicsBody?.collisionBitMask = 0
@@ -110,7 +153,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         obstacle.name = "obstacle"
         
         // Selecting random y position for missile
-        obstacle.position = CGPointMake(400, 200)
+        obstacle.position = CGPointMake(800, 270)
         self.addChild(obstacle)
     
     }
@@ -119,7 +162,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         penguin = SKSpriteNode(imageNamed: "penguin")
         
         // May Not be Needed
-        penguin.setScale(0.5)
+        penguin.setScale(0.3)
         //penguin.zRotation = CGFloat(-M_PI/2)
         
         // Adding SpriteKit physics body for collision detection
@@ -130,12 +173,27 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         penguin.physicsBody?.collisionBitMask = 0
         penguin.physicsBody?.usesPreciseCollisionDetection = true
         penguin.name = "penguin"
-        penguin.position = CGPointMake(100, 200)
+        penguin.position = CGPointMake(100, 270)
         
         self.addChild(penguin)
         
-        actionMoveUp = SKAction.moveByX(0, y: 30, duration: 0.2)
-        actionMoveDown = SKAction.moveByX(0, y: -30, duration: 0.2)
+        actionMoveUp = SKAction.moveByX(0, y: 250, duration: 0.5)
+        actionMoveDown = SKAction.moveByX(0, y: -250, duration: 0.4)
+        
+        
+    }
+    
+    func addScore() {
+        let scoreBox = SKLabelNode()
+        
+        scoreBox.zPosition = 1
+        scoreBox.text = "Score: \(score)"
+        scoreBox.fontName = "Chalkduster"
+        scoreBox.fontSize = 40
+        scoreBox.position = CGPointMake(850, 550)
+        scoreBox.name = "scoreBox"
+        self.addChild(scoreBox)
+        
     }
     
     func didBeginContact(contact: SKPhysicsContact) {
@@ -159,10 +217,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         /* Called before each frame is rendered */
         if currentTime - self.lastObstacleAdded > 1 {
             self.lastObstacleAdded = currentTime + 1
+            score += 1
+            print(score)
+            scene?.childNodeWithName("scoreBox")?.removeFromParent()
+            addScore()
             self.addObstacle()
         }
         
         self.moveBackground()
+        self.moveForeground()
         self.moveObstacle()
     }
+    
 }
