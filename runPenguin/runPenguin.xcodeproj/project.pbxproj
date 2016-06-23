@@ -78,9 +78,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B5FBC631D1B35DA00C40A73 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		6BE0C72A1D19DD6400D8E1BB = {
 			isa = PBXGroup;
 			children = (
+				6B5FBC631D1B35DA00C40A73 /* Library */,
 				6BE0C7351D19DD6400D8E1BB /* runPenguin */,
 				6BE0C74E1D19DD6400D8E1BB /* runPenguinTests */,
 				6BE0C7591D19DD6400D8E1BB /* runPenguinUITests */,
@@ -409,10 +417,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = runPenguin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jordanInc.runPenguin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -420,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = runPenguin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jordanInc.runPenguin;
@@ -494,6 +505,7 @@
 				6BE0C7611D19DD6400D8E1BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BE0C7621D19DD6400D8E1BB /* Build configuration list for PBXNativeTarget "runPenguinTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +514,7 @@
 				6BE0C7641D19DD6400D8E1BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BE0C7651D19DD6400D8E1BB /* Build configuration list for PBXNativeTarget "runPenguinUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +523,7 @@
 				6BE0C7671D19DD6400D8E1BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
