@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		1B4608A11D1C7ED600D494AA /* animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4608A01D1C7ED600D494AA /* animation.swift */; };
 		1B7ED8E31D1DB6A500B5BC91 /* penguin_flap.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1B7ED8E21D1DB6A500B5BC91 /* penguin_flap.atlas */; };
-		1B7ED8E51D1DB6AD00B5BC91 /* penguin_lose.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1B7ED8E41D1DB6AD00B5BC91 /* penguin_lose.atlas */; };
 		1B7ED8E91D1DC0E500B5BC91 /* penguin_run.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1B7ED8E81D1DC0E500B5BC91 /* penguin_run.atlas */; };
 		1B7ED8EB1D1DD97900B5BC91 /* object_rock.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1B7ED8EA1D1DD97900B5BC91 /* object_rock.atlas */; };
 		1B7ED8EF1D1DD9A000B5BC91 /* object_icicle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1B7ED8EE1D1DD9A000B5BC91 /* object_icicle.atlas */; };
+		1BCCB0011D219BAC0034C6C2 /* penguin_lose.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1BCCB0001D219BAC0034C6C2 /* penguin_lose.atlas */; };
 		6BE0C7371D19DD6400D8E1BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0C7361D19DD6400D8E1BB /* AppDelegate.swift */; };
 		6BE0C73B1D19DD6400D8E1BB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0C73A1D19DD6400D8E1BB /* GameScene.swift */; };
 		6BE0C73D1D19DD6400D8E1BB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0C73C1D19DD6400D8E1BB /* GameViewController.swift */; };
@@ -43,10 +43,10 @@
 /* Begin PBXFileReference section */
 		1B4608A01D1C7ED600D494AA /* animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animation.swift; sourceTree = "<group>"; };
 		1B7ED8E21D1DB6A500B5BC91 /* penguin_flap.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = penguin_flap.atlas; sourceTree = "<group>"; };
-		1B7ED8E41D1DB6AD00B5BC91 /* penguin_lose.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = penguin_lose.atlas; sourceTree = "<group>"; };
 		1B7ED8E81D1DC0E500B5BC91 /* penguin_run.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = penguin_run.atlas; sourceTree = "<group>"; };
 		1B7ED8EA1D1DD97900B5BC91 /* object_rock.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = object_rock.atlas; sourceTree = "<group>"; };
 		1B7ED8EE1D1DD9A000B5BC91 /* object_icicle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = object_icicle.atlas; sourceTree = "<group>"; };
+		1BCCB0001D219BAC0034C6C2 /* penguin_lose.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = penguin_lose.atlas; sourceTree = "<group>"; };
 		6BE0C7331D19DD6400D8E1BB /* runPenguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runPenguin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE0C7361D19DD6400D8E1BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BE0C73A1D19DD6400D8E1BB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -111,10 +111,10 @@
 		6BE0C7351D19DD6400D8E1BB /* runPenguin */ = {
 			isa = PBXGroup;
 			children = (
+				1BCCB0001D219BAC0034C6C2 /* penguin_lose.atlas */,
 				1B7ED8EE1D1DD9A000B5BC91 /* object_icicle.atlas */,
 				1B7ED8EA1D1DD97900B5BC91 /* object_rock.atlas */,
 				1B7ED8E81D1DC0E500B5BC91 /* penguin_run.atlas */,
-				1B7ED8E41D1DB6AD00B5BC91 /* penguin_lose.atlas */,
 				1B7ED8E21D1DB6A500B5BC91 /* penguin_flap.atlas */,
 				6BE0C7361D19DD6400D8E1BB /* AppDelegate.swift */,
 				6BE0C73A1D19DD6400D8E1BB /* GameScene.swift */,
@@ -253,9 +253,9 @@
 				1B7ED8EF1D1DD9A000B5BC91 /* object_icicle.atlas in Resources */,
 				6BE0C7451D19DD6400D8E1BB /* LaunchScreen.storyboard in Resources */,
 				6BE0C7421D19DD6400D8E1BB /* Assets.xcassets in Resources */,
-				1B7ED8E51D1DB6AD00B5BC91 /* penguin_lose.atlas in Resources */,
 				6BE0C7401D19DD6400D8E1BB /* Main.storyboard in Resources */,
 				1B7ED8E91D1DC0E500B5BC91 /* penguin_run.atlas in Resources */,
+				1BCCB0011D219BAC0034C6C2 /* penguin_lose.atlas in Resources */,
 				1B7ED8E31D1DB6A500B5BC91 /* penguin_flap.atlas in Resources */,
 				1B7ED8EB1D1DD97900B5BC91 /* object_rock.atlas in Resources */,
 			);

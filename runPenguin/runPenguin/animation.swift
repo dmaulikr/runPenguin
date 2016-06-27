@@ -30,6 +30,7 @@ class animation {
         
         
         self.atlas = SKTextureAtlas(named: self.prefix)
+        
         self.sprite = spriteNode
 
         
@@ -87,33 +88,38 @@ class animation {
         
         
         
-        self.sprite?.texture = frames[0]
+        
         
         // setup animation
         
-        setAnimation(FPS)
+        setAnimation(FPS,loop: loop)
         
         // start play on setup
         
         if (play == true) {
             animate(loop)
         }
+        
+        self.sprite?.texture = frames[0]
+        
     }
     
     // sets the animation action
     
-    func setAnimation(fps: Double = 1) {
+    func setAnimation(fps: Double = 1,loop:Bool) {
         
         if fps != 1{
             self.FPS = fps
         }
         
         //This is our general runAction method to make our bear walk.
-        
+
         self.action = SKAction.animateWithTextures(frames,
                 timePerFrame: (1/fps),
-                resize: false,
-                restore: true)
+                resize: true,
+                restore: false)
+
+    
     }
     
     // play the animation and loop if nessisary
