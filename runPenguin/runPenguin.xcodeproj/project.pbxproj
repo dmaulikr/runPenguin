@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B06E57A1D2304D3006B6292 /* obsticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B06E5791D2304D3006B6292 /* obsticle.swift */; };
+		1B06E57B1D23171E006B6292 /* object_icicle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1B7ED8EE1D1DD9A000B5BC91 /* object_icicle.atlas */; };
+		1B06E57C1D231743006B6292 /* icicle_pieces.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1B06E5771D22F403006B6292 /* icicle_pieces.atlas */; };
+		1B06E5801D2319D1006B6292 /* icicle_pieces_defaults.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1B06E57F1D2319D1006B6292 /* icicle_pieces_defaults.txt */; };
 		1B4608A11D1C7ED600D494AA /* animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4608A01D1C7ED600D494AA /* animation.swift */; };
+		1B6AA4D31D248DE40096C76C /* RPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AA4D21D248DE40096C76C /* RPObject.swift */; };
 		1B7ED8E31D1DB6A500B5BC91 /* penguin_flap.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1B7ED8E21D1DB6A500B5BC91 /* penguin_flap.atlas */; };
 		1B7ED8E91D1DC0E500B5BC91 /* penguin_run.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1B7ED8E81D1DC0E500B5BC91 /* penguin_run.atlas */; };
 		1B7ED8EB1D1DD97900B5BC91 /* object_rock.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1B7ED8EA1D1DD97900B5BC91 /* object_rock.atlas */; };
-		1B7ED8EF1D1DD9A000B5BC91 /* object_icicle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1B7ED8EE1D1DD9A000B5BC91 /* object_icicle.atlas */; };
 		1BCCB0011D219BAC0034C6C2 /* penguin_lose.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1BCCB0001D219BAC0034C6C2 /* penguin_lose.atlas */; };
+		1BCCB0031D21B49C0034C6C2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1BCCB0021D21B49C0034C6C2 /* GameScene.sks */; };
 		6BE0C7371D19DD6400D8E1BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0C7361D19DD6400D8E1BB /* AppDelegate.swift */; };
 		6BE0C73B1D19DD6400D8E1BB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0C73A1D19DD6400D8E1BB /* GameScene.swift */; };
 		6BE0C73D1D19DD6400D8E1BB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE0C73C1D19DD6400D8E1BB /* GameViewController.swift */; };
@@ -41,12 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B06E5771D22F403006B6292 /* icicle_pieces.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = icicle_pieces.atlas; sourceTree = "<group>"; };
+		1B06E5791D2304D3006B6292 /* obsticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = obsticle.swift; sourceTree = "<group>"; };
+		1B06E57F1D2319D1006B6292 /* icicle_pieces_defaults.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = icicle_pieces_defaults.txt; path = icicle_pieces.atlas/icicle_pieces_defaults.txt; sourceTree = "<group>"; };
 		1B4608A01D1C7ED600D494AA /* animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animation.swift; sourceTree = "<group>"; };
+		1B6AA4D21D248DE40096C76C /* RPObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPObject.swift; sourceTree = "<group>"; };
 		1B7ED8E21D1DB6A500B5BC91 /* penguin_flap.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = penguin_flap.atlas; sourceTree = "<group>"; };
 		1B7ED8E81D1DC0E500B5BC91 /* penguin_run.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = penguin_run.atlas; sourceTree = "<group>"; };
 		1B7ED8EA1D1DD97900B5BC91 /* object_rock.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = object_rock.atlas; sourceTree = "<group>"; };
 		1B7ED8EE1D1DD9A000B5BC91 /* object_icicle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = object_icicle.atlas; sourceTree = "<group>"; };
 		1BCCB0001D219BAC0034C6C2 /* penguin_lose.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = penguin_lose.atlas; sourceTree = "<group>"; };
+		1BCCB0021D21B49C0034C6C2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		6BE0C7331D19DD6400D8E1BB /* runPenguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runPenguin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE0C7361D19DD6400D8E1BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BE0C73A1D19DD6400D8E1BB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -111,11 +121,13 @@
 		6BE0C7351D19DD6400D8E1BB /* runPenguin */ = {
 			isa = PBXGroup;
 			children = (
-				1BCCB0001D219BAC0034C6C2 /* penguin_lose.atlas */,
+				1B06E57F1D2319D1006B6292 /* icicle_pieces_defaults.txt */,
 				1B7ED8EE1D1DD9A000B5BC91 /* object_icicle.atlas */,
+				1B06E5771D22F403006B6292 /* icicle_pieces.atlas */,
 				1B7ED8EA1D1DD97900B5BC91 /* object_rock.atlas */,
 				1B7ED8E81D1DC0E500B5BC91 /* penguin_run.atlas */,
 				1B7ED8E21D1DB6A500B5BC91 /* penguin_flap.atlas */,
+				1BCCB0001D219BAC0034C6C2 /* penguin_lose.atlas */,
 				6BE0C7361D19DD6400D8E1BB /* AppDelegate.swift */,
 				6BE0C73A1D19DD6400D8E1BB /* GameScene.swift */,
 				6BE0C73C1D19DD6400D8E1BB /* GameViewController.swift */,
@@ -124,6 +136,9 @@
 				6BE0C7431D19DD6400D8E1BB /* LaunchScreen.storyboard */,
 				6BE0C7461D19DD6400D8E1BB /* Info.plist */,
 				1B4608A01D1C7ED600D494AA /* animation.swift */,
+				1BCCB0021D21B49C0034C6C2 /* GameScene.sks */,
+				1B06E5791D2304D3006B6292 /* obsticle.swift */,
+				1B6AA4D21D248DE40096C76C /* RPObject.swift */,
 			);
 			path = runPenguin;
 			sourceTree = "<group>";
@@ -250,13 +265,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B7ED8EF1D1DD9A000B5BC91 /* object_icicle.atlas in Resources */,
+				1B06E57C1D231743006B6292 /* icicle_pieces.atlas in Resources */,
+				1B06E57B1D23171E006B6292 /* object_icicle.atlas in Resources */,
 				6BE0C7451D19DD6400D8E1BB /* LaunchScreen.storyboard in Resources */,
+				1BCCB0031D21B49C0034C6C2 /* GameScene.sks in Resources */,
 				6BE0C7421D19DD6400D8E1BB /* Assets.xcassets in Resources */,
 				6BE0C7401D19DD6400D8E1BB /* Main.storyboard in Resources */,
 				1B7ED8E91D1DC0E500B5BC91 /* penguin_run.atlas in Resources */,
 				1BCCB0011D219BAC0034C6C2 /* penguin_lose.atlas in Resources */,
 				1B7ED8E31D1DB6A500B5BC91 /* penguin_flap.atlas in Resources */,
+				1B06E5801D2319D1006B6292 /* icicle_pieces_defaults.txt in Resources */,
 				1B7ED8EB1D1DD97900B5BC91 /* object_rock.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B6AA4D31D248DE40096C76C /* RPObject.swift in Sources */,
 				6BE0C73B1D19DD6400D8E1BB /* GameScene.swift in Sources */,
+				1B06E57A1D2304D3006B6292 /* obsticle.swift in Sources */,
 				6BE0C73D1D19DD6400D8E1BB /* GameViewController.swift in Sources */,
 				1B4608A11D1C7ED600D494AA /* animation.swift in Sources */,
 				6BE0C7371D19DD6400D8E1BB /* AppDelegate.swift in Sources */,

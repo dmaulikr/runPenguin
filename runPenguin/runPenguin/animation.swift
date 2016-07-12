@@ -7,6 +7,7 @@
 //
 
 import SpriteKit
+import CoreGraphics
 
 class animation {
     
@@ -18,20 +19,20 @@ class animation {
     var key: String = "key"
     var action: SKAction!
     var FPS: Double = 0
+    var defaults: [AnyObject] = []
  
     
     // sets the parameters of the new animation along with optional values
     // prefix is just the folder name - .atlas the sprite node is where you want the animation to play
     
     
-    func set(prefix: String,spriteNode: SKSpriteNode, fps: Double = 1,play: Bool=false,loop: Bool=false) {
-        
+    func set(prefix: String, fps: Double = 1,play: Bool=false,loop: Bool=false) {
+   /Users/dev02/Documents/runPenguin/runPenguin/runPenguin/object_icicle.atlas/object_icicle07.png     
         self.prefix = prefix
         
         
-        self.atlas = SKTextureAtlas(named: self.prefix)
+        self.atlas = SKTextureAtlas(named: "\(self.prefix)")
         
-        self.sprite = spriteNode
 
         
         self.numFrames = atlas.textureNames.count
@@ -87,7 +88,7 @@ class animation {
         
         
         
-        
+        self.sprite.texture = frames[0]
         
         
         // setup animation
@@ -100,7 +101,7 @@ class animation {
             animate(loop)
         }
         
-        self.sprite?.texture = frames[0]
+        self.sprite.texture = frames[0]
         
     }
     
@@ -137,4 +138,4 @@ class animation {
         
     }
     
-}
+   }
